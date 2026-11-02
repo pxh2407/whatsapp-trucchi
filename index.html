@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WhatsApp: 7 trucchi che quasi nessuno conosce - LUTE Milazzo</title>
+<style>
+  /* solo per l'anteprima: nel sito WordPress lo sfondo lo dà il tema */
+  body { margin: 0; padding: 24px 12px; background: #fcfcfc; }
+</style>
+</head>
+<body>
+
+<!-- INIZIO APP — tutto ciò che sta fra INIZIO e FINE va nel blocco HTML di WordPress -->
+<div id="lute-wt" data-audio="audio/" data-immagini="immagini/">
+<style>
+  #lute-wt {
+    --verde: #1b5e3f; --verde-chiaro: #e8f2ec; --oro: #a8842c; --oro-chiaro: #f8f1df;
+    --carta: #ffffff; --sfondo: #f4f4f2; --bordo: #dcdcd8; --testo: #1a1a1a; --tenue: #4a4a4a;
+    --base: 19px;
+    max-width: 1040px; margin: 0 auto; background: var(--sfondo); color: var(--testo);
+    font-family: "Segoe UI", system-ui, -apple-system, Arial, sans-serif;
+    font-size: var(--base); line-height: 1.55; text-align: left;
+    border-radius: 16px; overflow: hidden; border: 1px solid var(--bordo);
+  }
+  #lute-wt * { box-sizing: border-box; }
+  #lute-wt header, #lute-wt section, #lute-wt footer, #lute-wt div { float: none; }
+  #lute-wt h2, #lute-wt h3, #lute-wt p, #lute-wt ol, #lute-wt ul { margin: 0; padding: 0; font-family: inherit; text-transform: none; letter-spacing: normal; }
+  #lute-wt button { font-family: inherit; line-height: 1.2; text-transform: none; letter-spacing: normal; cursor: pointer; }
+
+  /* testata */
+  #lute-wt .wt-testata {
+    background: linear-gradient(135deg, #1b5e3f 0%, #14492f 100%); color: #fff; padding: 24px 32px 22px;
+    display: flex; align-items: center; justify-content: space-between; gap: 24px;
+  }
+  #lute-wt .wt-titoli { flex: 1 1 auto; min-width: 0; }
+  #lute-wt .wt-sigla { display: inline-block; font-size: 0.8em; letter-spacing: 2.5px; text-transform: uppercase; color: #f3dfa6; font-weight: 600; padding-bottom: 6px; border-bottom: 2px solid var(--oro); }
+  #lute-wt .wt-testata h2 { font-size: 2em; line-height: 1.15; font-weight: 700; color: #fff; margin: 12px 0 8px; border: 0; }
+  #lute-wt .wt-sotto { color: #e6efe9; font-size: 0.98em; }
+  #lute-wt .wt-attrezzi { flex: 0 0 auto; display: flex; gap: 8px; align-self: flex-start; }
+  #lute-wt .wt-attrezzi button {
+    min-width: 54px; height: 46px; font-size: 1em; font-weight: 700; padding: 0 12px; border: 2px solid #f3dfa6; border-radius: 10px;
+    background: rgba(255,255,255,.08); color: #fff;
+  }
+  #lute-wt .wt-attrezzi button:hover { background: #f3dfa6; color: var(--verde); }
+
+  /* scelta del telefono e della voce */
+  #lute-wt .wt-scelta { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; padding: 18px 32px 4px; }
+  #lute-wt .wt-scelta span { font-weight: 700; color: var(--verde); }
+  #lute-wt .wt-scelta button {
+    font-size: 0.95em; font-weight: 700; padding: 10px 22px; border-radius: 999px; border: 3px solid var(--verde);
+    background: #fff; color: var(--verde);
+  }
+  #lute-wt .wt-scelta button[aria-pressed="true"] { background: var(--verde); color: #fff; }
+  #lute-wt .wt-scelta .wt-voce { margin-left: auto; border-color: var(--oro); color: #7a5f1c; }
+  #lute-wt .wt-scelta .wt-voce[aria-pressed="true"] { background: var(--oro); color: #fff; }
+
+  #lute-wt .wt-lista { padding: 12px 32px 8px; }
+
+  /* un trucco */
+  #lute-wt details.wt-t { background: var(--carta); border: 1px solid var(--bordo); border-left: 8px solid var(--col); border-radius: 14px; margin: 0 0 12px; }
+  #lute-wt details.wt-t > summary { list-style: none; cursor: pointer; padding: 14px 18px; font-weight: 700; color: var(--verde); display: flex; gap: 12px; align-items: center; }
+  #lute-wt details.wt-t > summary::-webkit-details-marker { display: none; }
+  #lute-wt details.wt-t > summary::after { content: "\25BE"; margin-left: 8px; color: var(--col); font-size: 1.2em; transition: transform .15s; }
+  #lute-wt details.wt-t[open] > summary::after { transform: rotate(180deg); }
+  #lute-wt details.wt-t > summary:focus-visible { outline: 4px solid var(--oro); outline-offset: 2px; }
+  #lute-wt .wt-ic { flex: 0 0 auto; width: 46px; height: 46px; border-radius: 14px; background: var(--col); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 1.4em; box-shadow: 0 3px 0 rgba(0,0,0,.18); }
+  #lute-wt .wt-tit { flex: 1 1 auto; }
+  #lute-wt .wt-badge { font-size: 0.7em; font-weight: 600; background: var(--oro-chiaro); color: #7a5f1c; border-radius: 999px; padding: 3px 12px; white-space: nowrap; }
+  #lute-wt .wt-corpo { padding: 4px 18px 20px; display: flex; gap: 26px; align-items: flex-start; }
+  #lute-wt .wt-testi { flex: 1 1 auto; min-width: 0; }
+  #lute-wt .wt-perche { font-size: 1em; margin: 0 0 10px; padding: 10px 14px; border-radius: 12px; background: var(--verde-chiaro); }
+  #lute-wt ol.wt-passi { list-style: none; counter-reset: n; }
+  #lute-wt ol.wt-passi li { counter-increment: n; position: relative; padding: 6px 0 6px 46px; min-height: 40px; border-radius: 10px; transition: background .3s; }
+  #lute-wt ol.wt-passi li::before {
+    content: counter(n); position: absolute; left: 0; top: 6px; width: 32px; height: 32px; border-radius: 50%;
+    background: var(--col); color: #fff; font-weight: 700; display: flex; align-items: center; justify-content: center; font-size: 0.9em;
+  }
+  #lute-wt .wt-nota { background: var(--oro-chiaro); border: 2px solid var(--oro); border-radius: 12px; padding: 10px 16px; margin-top: 10px; font-size: 0.95em; }
+  #lute-wt .wt-avviso { background: var(--oro-chiaro); border: 2px solid var(--oro); border-radius: 12px; padding: 12px 16px; font-weight: 600; }
+
+  /* riquadro colorato con il telefono animato */
+  #lute-wt .wt-demo {
+    flex: 0 0 310px; position: relative; overflow: hidden; border-radius: 22px; padding: 14px 14px 16px; text-align: center;
+    background: radial-gradient(circle at 20% 10%, rgba(255,255,255,.35), rgba(255,255,255,0) 40%), linear-gradient(160deg, var(--col), var(--col2));
+    box-shadow: 0 6px 18px rgba(0,0,0,.18);
+  }
+  #lute-wt .wt-passo { display: inline-block; background: #fff; color: var(--col2); font-weight: 800; font-size: 0.85em; border-radius: 999px; padding: 4px 16px; margin-bottom: 10px; box-shadow: 0 2px 0 rgba(0,0,0,.15); }
+  #lute-wt .wt-telbox { width: 257px; height: 490px; margin: 0 auto; position: relative; }
+  #lute-wt .wt-tel {
+    width: 214px; height: 408px; border: 7px solid #111; border-radius: 30px; position: absolute; left: 0; top: 0;
+    overflow: hidden; transform: scale(1.2); transform-origin: 0 0;
+    background-color: #efeae2; background-image: radial-gradient(rgba(0,0,0,.05) 1px, transparent 1px); background-size: 12px 12px;
+    box-shadow: 0 10px 22px rgba(0,0,0,.35);
+  }
+  #lute-wt .wt-tel::before { content: ""; position: absolute; top: 4px; left: 50%; width: 52px; height: 7px; margin-left: -26px; border-radius: 6px; background: #111; z-index: 9; }
+  #lute-wt .wt-sc { position: absolute; left: 0; top: 0; right: 0; bottom: 0; }
+  #lute-wt .wt-mano {
+    position: absolute; z-index: 8; font-size: 40px; line-height: 1; width: 40px; height: 44px; left: 80px; top: 200px; opacity: 0;
+    transition: left .8s ease, top .8s ease, opacity .3s; pointer-events: none; filter: drop-shadow(0 3px 2px rgba(0,0,0,.4));
+  }
+  #lute-wt .wt-mano.wt-preme { animation: wt-preme .5s ease 2; }
+  @keyframes wt-preme { 0% { transform: translateY(0) scale(1); } 50% { transform: translateY(5px) scale(.88); } 100% { transform: translateY(0) scale(1); } }
+  #lute-wt .wt-anello { position: absolute; z-index: 7; width: 34px; height: 34px; border-radius: 50%; border: 4px solid #ffd43b; opacity: 0; pointer-events: none; }
+  #lute-wt .wt-anello.wt-vai { animation: wt-onda 1.1s ease-out infinite; }
+  @keyframes wt-onda { 0% { transform: scale(.5); opacity: 1; } 100% { transform: scale(1.7); opacity: 0; } }
+  #lute-wt .wt-fatto {
+    position: absolute; z-index: 9; left: 50%; top: 42%; transform: translate(-50%, -50%) scale(0); background: #2f9e44; color: #fff;
+    font-weight: 800; font-size: 20px; padding: 10px 20px; border-radius: 999px; border: 4px solid #fff; box-shadow: 0 4px 14px rgba(0,0,0,.35); white-space: nowrap;
+  }
+  #lute-wt .wt-fatto.wt-vai { animation: wt-pop .5s ease forwards; }
+  @keyframes wt-pop { 0% { transform: translate(-50%, -50%) scale(0); } 70% { transform: translate(-50%, -50%) scale(1.15); } 100% { transform: translate(-50%, -50%) scale(1); } }
+  #lute-wt .wt-coriandolo { position: absolute; top: -12px; width: 9px; height: 14px; border-radius: 2px; z-index: 10; animation: wt-cade 2.2s linear forwards; }
+  @keyframes wt-cade { 0% { transform: translateY(0) rotate(0); opacity: 1; } 100% { transform: translateY(620px) rotate(720deg); opacity: .8; } }
+  #lute-wt .wt-cap {
+    margin-top: 12px; background: #fff; color: #1a1a1a; font-weight: 700; font-size: 1em; line-height: 1.3; border-radius: 16px;
+    padding: 12px 14px; min-height: 4.4em; display: flex; align-items: center; justify-content: center; box-shadow: 0 3px 0 rgba(0,0,0,.15); position: relative;
+  }
+  #lute-wt .wt-cap::before { content: ""; position: absolute; top: -9px; left: 50%; margin-left: -10px; border: 10px solid transparent; border-top: 0; border-bottom-color: #fff; }
+  #lute-wt .wt-ctrl { display: flex; gap: 8px; justify-content: center; margin-top: 12px; flex-wrap: wrap; }
+  #lute-wt .wt-ctrl button { font-size: 0.85em; font-weight: 700; padding: 9px 14px; border-radius: 12px; border: 0; background: #fff; color: var(--col2); box-shadow: 0 3px 0 rgba(0,0,0,.2); }
+  #lute-wt .wt-ctrl button:active { transform: translateY(2px); box-shadow: 0 1px 0 rgba(0,0,0,.2); }
+  #lute-wt .wt-suggerisci { color: #fff; font-weight: 700; font-size: 0.85em; margin-top: 8px; display: none; }
+  #lute-wt .wt-suggerisci.wt-vedi { display: block; }
+
+  /* elementi disegnati dentro il telefono (schermo 200 x 394) */
+  #lute-wt .u-bar { position: absolute; left: 0; right: 0; top: 0; height: 36px; background: #008069; color: #fff; font-size: 12px; font-weight: 700; padding: 13px 10px 0; }
+  #lute-wt .u-row { position: absolute; left: 0; right: 0; height: 36px; background: #fff; border-bottom: 1px solid #e3e3e3; padding: 10px; font-size: 12px; text-align: left; }
+  #lute-wt .u-hi { animation: u-luce .8s ease-in-out infinite alternate; position: absolute; z-index: 2; }
+  #lute-wt .u-row.u-hi { background: #fff9db; }
+  @keyframes u-luce { 0% { box-shadow: 0 0 0 2px #ffd43b, 0 0 4px 2px rgba(255,212,59,.6); } 100% { box-shadow: 0 0 0 4px #ffd43b, 0 0 16px 6px rgba(255,212,59,.9); } }
+  #lute-wt .u-bub { position: absolute; max-width: 80%; padding: 6px 9px; border-radius: 9px; font-size: 11px; line-height: 1.35; text-align: left; box-shadow: 0 1px 1px rgba(0,0,0,.15); }
+  #lute-wt .u-in { left: 8px; background: #fff; }
+  #lute-wt .u-out { right: 8px; background: #d9fdd3; }
+  #lute-wt .u-q { border-left: 3px solid #008069; background: rgba(0,0,0,.06); padding: 2px 6px; margin-bottom: 4px; font-size: 10px; border-radius: 3px; }
+  #lute-wt .u-cit > div { border-left: 3px solid #008069; background: rgba(0,0,0,.06); padding: 3px 8px; border-radius: 3px; }
+  #lute-wt .u-inp { position: absolute; left: 8px; right: 50px; bottom: 10px; min-height: 34px; background: #fff; border-radius: 17px; padding: 9px 12px; font-size: 11px; text-align: left; line-height: 1.35; box-shadow: 0 1px 1px rgba(0,0,0,.15); }
+  #lute-wt .u-inp::after { content: "🎤"; position: absolute; right: -42px; bottom: 0; width: 34px; height: 34px; border-radius: 50%; background: #00a884; display: flex; align-items: center; justify-content: center; font-size: 13px; }
+  #lute-wt .u-menu { position: absolute; background: #fff; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,.35); min-width: 120px; z-index: 3; }
+  #lute-wt .u-mi { padding: 7px 12px; font-size: 11px; height: 30px; text-align: left; white-space: nowrap; }
+  #lute-wt .u-mi.u-hi { position: relative; background: #fff9db; border-radius: 6px; }
+  #lute-wt .u-btn { position: absolute; background: #008069; color: #fff; border-radius: 999px; padding: 9px 12px; font-size: 12px; font-weight: 700; text-align: center; }
+  #lute-wt .u-btn.u-alt { background: #fff; color: #008069; border: 2px solid #008069; padding: 7px 10px; }
+  #lute-wt .u-vid { position: absolute; left: 10px; right: 10px; border-radius: 6px; color: #fff; font-size: 13px; font-weight: 700; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #3b5bdb, #9c36b5); }
+  #lute-wt .u-tl { position: absolute; left: 10px; right: 10px; height: 34px; border-radius: 6px; background: repeating-linear-gradient(90deg, #5c7cfa 0 22px, #845ef7 22px 44px); }
+  #lute-wt .u-sel { position: absolute; top: -4px; bottom: -4px; border: 4px solid #ffd43b; border-radius: 6px; background: rgba(255,212,59,.15); transition: left .6s, width .6s; }
+  #lute-wt .u-sel b { position: absolute; top: 5px; left: 50%; transform: translateX(-50%); font-size: 11px; color: #fff; text-shadow: 0 1px 2px #000; }
+  #lute-wt .u-tog { position: absolute; top: 8px; right: 8px; padding: 4px 12px; border-radius: 999px; background: #fff; color: #008069; font-size: 11px; font-weight: 800; z-index: 2; }
+  #lute-wt .u-tog.u-on { background: #ffd43b; color: #1a1a1a; }
+  #lute-wt .u-send { position: absolute; width: 40px; height: 40px; border-radius: 50%; background: #00a884; color: #fff; font-size: 17px; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 4px rgba(0,0,0,.3); }
+  #lute-wt .u-tile { position: absolute; width: 86px; height: 120px; border-radius: 10px; overflow: hidden; }
+  #lute-wt .u-sfondo { position: absolute; left: 0; right: 0; top: 36px; bottom: 0; overflow: hidden; }
+  #lute-wt .u-tile > i, #lute-wt .u-sfondo > i { position: absolute; display: block; }
+  #lute-wt .u-photo { position: absolute; left: 10px; right: 10px; border-radius: 10px; background: linear-gradient(180deg, #74c0fc, #b2f2bb); font-size: 90px; display: flex; align-items: center; justify-content: center; }
+  #lute-wt .u-big { font-size: 60px; background: transparent; box-shadow: none; padding: 0; }
+
+  #lute-wt .wt-piede { padding: 6px 32px 24px; font-size: 0.88em; color: var(--tenue); }
+  #lute-wt .wt-piede p { margin: 6px 0; }
+  #lute-wt .wt-piede a { color: var(--verde); font-weight: 700; }
+  #lute-wt button:focus-visible, #lute-wt a:focus-visible { outline: 4px solid var(--oro); outline-offset: 2px; }
+  #lute-wt:fullscreen { overflow: auto; border-radius: 0; max-width: none; }
+
+  @media (max-width: 800px) {
+    #lute-wt .wt-corpo { flex-direction: column-reverse; align-items: stretch; }
+    #lute-wt .wt-demo { flex: 0 0 auto; }
+  }
+  @media (max-width: 700px) {
+    #lute-wt { --base: 17px; }
+    #lute-wt .wt-testata { padding: 20px 16px 16px; flex-direction: column; align-items: stretch; gap: 14px; }
+    #lute-wt .wt-testata h2 { font-size: 1.6em; }
+    #lute-wt .wt-attrezzi { align-self: flex-start; }
+    #lute-wt .wt-scelta, #lute-wt .wt-lista, #lute-wt .wt-piede { padding-left: 16px; padding-right: 16px; }
+    #lute-wt .wt-scelta .wt-voce { margin-left: 0; }
+    #lute-wt .wt-badge { display: none; }
+    #lute-wt .wt-corpo { padding-left: 12px; padding-right: 12px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    #lute-wt .wt-mano, #lute-wt .u-sel { transition: none; }
+    #lute-wt .wt-mano.wt-preme, #lute-wt .wt-anello.wt-vai, #lute-wt .u-hi, #lute-wt .wt-coriandolo { animation: none; }
+  }
+</style>
+
+<header class="wt-testata">
+  <div class="wt-titoli">
+    <div class="wt-sigla">LUTE Milazzo · Trucchi per il telefono</div>
+    <h2>WhatsApp: 7 trucchi che quasi nessuno conosce</h2>
+    <div class="wt-sotto">Tocca un trucco: un telefono animato ti mostra dove toccare e una voce ti spiega che cosa fare.</div>
+  </div>
+  <div class="wt-attrezzi">
+    <button type="button" class="wt-piu" aria-label="Ingrandisci il testo">A+</button>
+    <button type="button" class="wt-meno" aria-label="Riduci il testo">A−</button>
+    <button type="button" class="wt-schermo" aria-label="Schermo intero">⛶</button>
+  </div>
+</header>
+
+<div class="wt-scelta">
+  <span>Il mio telefono è:</span>
+  <button type="button" id="wt-and" aria-pressed="true">Android</button>
+  <button type="button" id="wt-iph" aria-pressed="false">iPhone</button>
+  <button type="button" class="wt-voce" id="wt-voce" aria-pressed="true">🔊 Voce accesa</button>
+</div>
+
+<div class="wt-lista" id="wt-lista"></div>
+
+<footer class="wt-piede">
+  <p>Le voci dei menu possono cambiare un poco secondo la versione di WhatsApp e del telefono. Alcune funzioni sono recenti: se non le trovi, aggiorna l'app.</p>
+  <p>Spunti tratti dal video «WhatsApp: 15 TRUCCHI SEGRETI che DEVI PROVARE SUBITO!» di Nicholas Ghigo, <a class="wt-video" target="_blank" rel="noopener">guardalo su YouTube</a>. I testi, le animazioni e la voce di questa pagina sono nostri.</p>
+</footer>
+
+<script>
+(function () {
+  /* DATI-INIZIO — questa parte la legge anche strumenti/frasi.js per registrare le voci */
+
+  /* piccoli costruttori per le scene del telefono (schermo 200 x 394) */
+  function bar(t) { return { k: 'bar', t: t }; }
+  function row(y, t, hi) { return { k: 'row', y: y, t: t, hi: hi }; }
+  function bub(s, y, t, o) { o = o || {}; return { k: 'bub', s: s, y: y, t: t, hi: o.hi, q: o.q, cit: o.cit, big: o.big }; }
+  function inp(t) { return { k: 'inp', t: t }; }
+  function menu(x, y, i, hi) { return { k: 'menu', x: x, y: y, i: i, hi: hi }; }
+  function btn(x, y, w, t, hi, alt) { return { k: 'btn', x: x, y: y, w: w, t: t, hi: hi, alt: alt }; }
+  function vid(y, h, t) { return { k: 'vid', y: y, h: h, t: t }; }
+  function tl(y, a, b, t) { return { k: 'tl', y: y, a: a, b: b, t: t }; }
+  function tog(on, hi) { return { k: 'tog', on: on, hi: hi }; }
+  function send(x, y, hi) { return { k: 'send', x: x, y: y, hi: hi }; }
+  function tiles(y, hi) { return { k: 'tiles', y: y, hi: hi }; }
+  function sfondo(v) { return { k: 'sfondo', v: v }; }
+  function photo(y, h, e, hi) { return { k: 'photo', y: y, h: h, e: e, hi: hi }; }
+
+  /* un fotogramma: c = scritta, v = frase detta dalla voce, u = elementi, t = dove tocca la mano */
+  function fr(c, v, u, t) { return { c: c, v: v, u: u, t: t || null }; }
+
+  var TRUCCHI = [
+    { ic: '📸', col: '#f76707', col2: '#c2410c', t: 'Foto e video sempre nitidi',
+      per: 'Se le foto che mandi arrivano «sgranate», è perché WhatsApp le comprime. Puoi chiedergli di non farlo mai.',
+      a: [
+        'Apri WhatsApp, tocca i tre puntini ⋮ in alto a destra e poi «Impostazioni».',
+        'Tocca «Archiviazione e dati».',
+        'Tocca «Qualità caricamento file multimediali» (il nome può essere leggermente diverso).',
+        'Scegli «Qualità HD».',
+        'Da ora foto e video partono più nitidi, senza dover premere «HD» ogni volta.'
+      ],
+      i: [
+        'Apri WhatsApp e tocca «Impostazioni» in basso a destra.',
+        'Tocca «Spazio e dati».',
+        'Tocca «Qualità del caricamento».',
+        'Scegli «Qualità HD».'
+      ],
+      n: 'Le foto HD pesano di più: l\'invio è più lento e consuma più dati. Se hai pochi giga, tieni «Standard» e usa HD solo con il Wi-Fi.',
+      sc: [
+        fr('Nelle Impostazioni tocca «Archiviazione e dati»', 'Apri le impostazioni di WhatsApp e tocca la voce Archiviazione e dati.',
+          [bar('Impostazioni'), row(42, '👤  Profilo'), row(80, '💬  Chat'), row(118, '🗂️  Archiviazione e dati', true), row(156, '🔔  Notifiche')], [150, 136]),
+        fr('Tocca «Qualità caricamento»', 'Poi tocca Qualità di caricamento dei file multimediali.',
+          [bar('Archiviazione e dati'), row(42, 'Gestisci archiviazione'), row(80, 'Download automatico'), row(118, '⬆️  Qualità caricamento', true)], [150, 136]),
+        fr('Scegli «Qualità HD»', 'Scegli Qualità HD.',
+          [bar('Qualità caricamento'), row(42, '○  Standard'), row(80, '◉  Qualità HD', true)], [120, 98]),
+        fr('Fatto! Foto e video partono nitidi', 'Fatto! Da adesso foto e video partiranno sempre nitidi.',
+          [bar('Qualità caricamento'), row(42, '○  Standard'), row(80, '✅  Qualità HD')])
+      ] },
+
+    { ic: '🎞️', col: '#d6336c', col2: '#a61e4d', t: 'Trasformare un video in una GIF',
+      per: 'Una GIF è un breve filmato che si ripete in continuazione: pesa poco e si carica in fretta.',
+      a: [
+        'Nella chat tocca la graffetta 📎 e poi «Galleria».',
+        'Scegli un video: si apre la schermata di modifica.',
+        'Se il video dura 6 secondi o meno, in alto a destra compare già l\'interruttore «GIF».',
+        'Se dura di più, trascina le due maniglie sotto il video finché resta al massimo 6 secondi: l\'interruttore compare.',
+        'Tocca «GIF» e poi la freccia verde per inviare.'
+      ],
+      i: [
+        'Nella chat tocca il + a sinistra della casella e poi «Libreria foto e video».',
+        'Scegli un video: si apre la schermata di modifica.',
+        'Se il video dura 6 secondi o meno, in alto a destra compare già l\'interruttore «GIF».',
+        'Se dura di più, trascina le due maniglie sotto il video finché resta al massimo 6 secondi.',
+        'Tocca «GIF» e poi la freccia verde per inviare.'
+      ],
+      n: 'Puoi spostare la selezione per scegliere proprio il momento che ti piace.',
+      sc: [
+        fr('Questo video dura 14 secondi: è troppo lungo', 'Scegli un video dalla galleria: si apre la schermata di modifica. Questo video dura quattordici secondi: è troppo lungo.',
+          [bar('Modifica video'), vid(50, 190, '🎬  Video di 14 secondi'), tl(262, 0, 100, '14 s')]),
+        fr('Trascina le maniglie gialle', 'Trascina le due maniglie gialle sotto il video.',
+          [bar('Modifica video'), vid(50, 190, '🎬  Video di 14 secondi'), tl(262, 0, 100, '14 s')], [188, 279]),
+        fr('Lascia al massimo 6 secondi', 'Lascia al massimo sei secondi.',
+          [bar('Modifica video'), vid(50, 190, '🎬  Video di 6 secondi'), tl(262, 15, 45, '6 s')], [92, 279]),
+        fr('Compare «GIF» in alto: toccalo', 'In alto a destra compare il pulsante GIF: toccalo.',
+          [bar('Modifica video'), tog(false, true), vid(50, 190, '🎬  Video di 6 secondi'), tl(262, 15, 45, '6 s')], [168, 20]),
+        fr('Tocca la freccia verde per inviare', 'Ora tocca la freccia verde per inviare la tua GIF.',
+          [bar('Modifica video'), tog(true), vid(50, 190, '🎞️  GIF pronta!'), tl(262, 15, 45, '6 s'), send(148, 336, true)], [168, 356])
+      ] },
+
+    { ic: '🎨', col: '#1c7ed6', col2: '#1864ab', t: 'Uno sfondo della chat creato con l\'intelligenza artificiale',
+      per: 'Invece dei soliti disegni, descrivi a parole lo sfondo che vuoi e WhatsApp lo crea.',
+      p: [
+        'Apri la chat con una persona e tocca il suo nome in alto.',
+        'Tocca «Tema della chat» (su alcuni telefoni «Sfondo»).',
+        'Tocca «Crea con l\'IA».',
+        'Scrivi che immagine vuoi, per esempio «un tramonto sul mare di Milazzo».',
+        'WhatsApp propone 4 immagini diverse tra loro: scegli quella che ti piace.'
+      ],
+      n: 'È una funzione recente e non è ancora su tutti i telefoni: se non vedi «Crea con l\'IA», aggiorna l\'app. Più dettagli scrivi, meglio viene. Lo sfondo vale solo per quella chat.',
+      sc: [
+        fr('Tocca il nome, poi «Tema della chat»', 'Apri la chat, tocca il nome della persona in alto, e poi Tema della chat.',
+          [bar('Anna'), row(42, '🔕  Silenzia notifiche'), row(80, '🎨  Tema della chat', true), row(118, '⏱️  Messaggi temporanei')], [140, 98]),
+        fr('Tocca «Crea con l\'IA»', 'Tocca Crea con l\'IA.',
+          [bar('Tema della chat'), btn(30, 64, 140, '✨ Crea con l\'IA', true), row(130, 'Oppure scegli un tema pronto')], [100, 82]),
+        fr('Scrivi che immagine vuoi', 'Scrivi con parole tue l\'immagine che desideri, per esempio un tramonto sul mare di Milazzo.',
+          [bar('Crea con l\'IA'), inp('Un tramonto sul mare di Milazzo')]),
+        fr('Scegli una delle 4 immagini', 'WhatsApp ti propone quattro immagini: scegli quella che ti piace di più.',
+          [bar('Scegli uno sfondo'), tiles(46, 2)], [53, 236]),
+        fr('Ecco la chat con il tuo tramonto!', 'Ecco fatto: la chat con Anna ora ha il tuo tramonto come sfondo.',
+          [sfondo(2), bar('Anna'), bub('in', 60, 'Che bello sfondo! 😍'), bub('out', 110, 'Fatto con l\'IA 🌅')])
+      ] },
+
+    { ic: '🤖', col: '#7048e8', col2: '#5f3dc4', t: 'Fare una domanda a Meta AI dentro la chat',
+      per: 'L\'assistente di Meta si può chiamare in una chat qualsiasi, come se fosse un altro partecipante.',
+      p: [
+        'Apri una chat qualsiasi.',
+        'Scrivi @ (la chiocciola): tra i suggerimenti compare «Meta AI».',
+        'Toccalo e scrivi la domanda, per esempio «quanto è alta la Torre Eiffel?».',
+        'Invia: la risposta compare nella chat e la vedono anche gli altri partecipanti.'
+      ],
+      n: 'Meta AI è un\'intelligenza artificiale e può sbagliare: per cose importanti (salute, soldi, leggi) controlla sempre da una fonte sicura. Quello che le scrivi viene elaborato da Meta: non inserire password, numeri di carta o altri dati personali.',
+      sc: [
+        fr('Scrivi @ e scegli «Meta AI»', 'Nella chat scrivi la chiocciola, e tra i suggerimenti tocca Meta AI.',
+          [bar('Anna'), bub('in', 52, 'Sapete quanto è alta la Torre Eiffel?'), inp('@'), menu(12, 268, ['🤖  Meta AI', '👤  Anna'], 0)], [50, 283]),
+        fr('Scrivi la domanda e invia', 'Scrivi la tua domanda e inviala.',
+          [bar('Anna'), bub('in', 52, 'Sapete quanto è alta la Torre Eiffel?'), inp('@Meta AI quanto è alta la Torre Eiffel?')]),
+        fr('La risposta arriva in chat: la vedono tutti', 'La risposta arriva nella chat, e la leggono anche gli altri. Ricorda però che può sbagliare.',
+          [bar('Anna'), bub('in', 52, 'Sapete quanto è alta la Torre Eiffel?'), bub('out', 112, '@Meta AI quanto è alta la Torre Eiffel?'), bub('in', 178, '🤖 Meta AI: circa 330 metri, antenne comprese.')])
+      ] },
+
+    { ic: '🤫', col: '#0c8599', col2: '#0b7285', t: 'Rispondere in privato a un messaggio del gruppo',
+      per: 'Vuoi dire qualcosa a una sola persona senza scriverlo davanti a tutti? Non serve cercare la sua chat.',
+      a: [
+        'Nel gruppo tieni premuto il messaggio della persona.',
+        'Tocca i tre puntini ⋮ in alto a destra e poi «Rispondi in privato».',
+        'Si apre la chat personale con quella persona, con il suo messaggio già citato.'
+      ],
+      i: [
+        'Nel gruppo tieni premuto il messaggio della persona.',
+        'Tocca «Altro» e poi «Rispondi in privato».',
+        'Si apre la chat personale con quella persona, con il suo messaggio già citato.'
+      ],
+      n: 'Gli altri partecipanti del gruppo non vedono la tua risposta.',
+      sc: [
+        fr('Tieni premuto il messaggio', 'Nel gruppo, tieni premuto il messaggio a cui vuoi rispondere.',
+          [bar('Gruppo LUTE'), bub('in', 60, 'Anna: Chi porta le sedie?', { hi: true }), bub('in', 104, 'Marco: Io porto il caffè ☕')], [80, 80]),
+        fr('Tocca «Rispondi in privato»', 'Tocca i tre puntini, e poi Rispondi in privato.',
+          [bar('Gruppo LUTE'), bub('in', 60, 'Anna: Chi porta le sedie?'), menu(62, 40, ['↩️  Rispondi', '🔒  Rispondi in privato', '➡️  Inoltra'], 1)], [120, 85]),
+        fr('Si apre la chat con Anna, solo voi due', 'Si apre la chat solo con Anna, con il suo messaggio già citato. Gli altri del gruppo non vedono niente.',
+          [bar('Anna'), bub('out', 60, 'Le porto io!', { q: 'Chi porta le sedie?' })])
+      ] },
+
+    { ic: '📝', col: '#e03131', col2: '#c92a2a', t: 'Elenchi, citazioni e testo «da macchina da scrivere»',
+      per: 'Pochi simboli all\'inizio della frase cambiano l\'aspetto del messaggio.',
+      p: [
+        'Elenco puntato: scrivi un trattino e uno spazio («- ») oppure un asterisco e uno spazio, poi la prima voce. Premi Invio sulla tastiera: il trattino compare da solo. Per finire l\'elenco premi Invio due volte.',
+        'Citazione: scrivi il simbolo «maggiore» e uno spazio («> ») e poi la frase. Nel messaggio apparirà in un riquadro con una barra a sinistra.',
+        'Testo da macchina da scrivere: metti la parola tra due accenti gravi, così: `parola`. Serve a mettere in evidenza un termine.',
+        'L\'accento grave non è sulla tastiera principale: tieni premuto il tasto dell\'apostrofo o cercalo nei simboli.'
+      ],
+      n: 'Si possono combinare con il grassetto (*parola*), il corsivo (_parola_) e il barrato (~parola~).',
+      sc: [
+        fr('Scrivi «- » e la prima voce', 'Per fare un elenco, scrivi un trattino, uno spazio, e la prima voce.',
+          [bar('Anna'), inp('- pane')]),
+        fr('Premi Invio: il trattino compare da solo', 'Vai a capo con il tasto invio: il trattino compare da solo.',
+          [bar('Anna'), inp('- pane\n- latte\n- uova')]),
+        fr('Ecco l\'elenco puntato!', 'Invia, ed ecco un elenco puntato bello ordinato.',
+          [bar('Anna'), bub('out', 60, '• pane\n• latte\n• uova')]),
+        fr('Con «> » la frase diventa una citazione', 'E se cominci con il simbolo maggiore e uno spazio, la frase diventa una citazione.',
+          [bar('Anna'), bub('out', 60, '• pane\n• latte\n• uova'), bub('out', 140, 'Ricordate: sabato alle 16', { cit: true })])
+      ] },
+
+    { ic: '😺', col: '#2f9e44', col2: '#2b8a3e', t: 'Fare uno sticker con una tua foto',
+      per: 'Trasformi il soggetto di una foto, una persona, un animale o un oggetto, in uno sticker da mandare.',
+      a: [
+        'Apri la chat e tocca la faccina vicino alla casella di testo, poi la scheda «Sticker».',
+        'Cerca il pulsante «Crea» o il + per creare uno sticker.',
+        'Scegli una foto dalla galleria: WhatsApp ritaglia il soggetto.',
+        'Aggiungi, se vuoi, testo, emoji o disegni, poi tocca la freccia per inviare.'
+      ],
+      i: [
+        'Apri una foto nell\'app Foto: il soggetto deve essere ben distinguibile.',
+        'Tieni premuto sul soggetto: si ritaglia da solo.',
+        'Tocca «Copia».',
+        'Torna nella chat di WhatsApp, tieni premuto nella casella di testo e tocca «Incolla».',
+        'Compare come sticker: invialo così o aggiungi prima emoji, testo e disegni.'
+      ],
+      n: 'Su Android la funzione «Crea» è presente nelle versioni recenti di WhatsApp; il nome della voce può cambiare. Usa foto tue o di persone che hanno detto sì.',
+      sc: {
+        a: [
+          fr('Tocca la faccina, poi «Sticker»', 'Nella chat tocca la faccina, e poi la scheda Sticker.',
+            [bar('Anna'), btn(8, 300, 58, '😀 Emoji', false, true), btn(71, 300, 58, 'GIF', false, true), btn(134, 300, 58, 'Sticker', true)], [163, 318]),
+          fr('Tocca «Crea»', 'Tocca Crea.',
+            [bar('Sticker'), btn(40, 70, 120, '＋  Crea', true), row(134, 'I tuoi sticker')], [100, 88]),
+          fr('Scegli una tua foto', 'Scegli una tua foto: WhatsApp ritaglia da solo il soggetto.',
+            [bar('Scegli una foto'), photo(50, 250, '🐶', true)], [100, 175]),
+          fr('Ecco il tuo sticker!', 'Aggiungi se vuoi una scritta, e invia il tuo sticker personale.',
+            [bar('Anna'), bub('out', 60, '🐶', { big: true })])
+        ],
+        i: [
+          fr('Nell\'app Foto tieni premuto sul soggetto', 'Nell\'app Foto, tieni premuto sul soggetto della foto.',
+            [bar('Foto'), photo(50, 250, '🐶', true)], [100, 175]),
+          fr('Tocca «Copia»', 'Tocca Copia.',
+            [bar('Foto'), photo(50, 250, '🐶'), menu(60, 190, ['📋  Copia', '↗️  Condividi'], 0)], [100, 205]),
+          fr('Nella chat tocca «Incolla»', 'Torna nella chat, tieni premuto nella casella di testo e tocca Incolla.',
+            [bar('Anna'), inp(''), menu(20, 290, ['📋  Incolla'], 0)], [60, 305]),
+          fr('Ecco il tuo sticker!', 'Ecco il tuo sticker personale, pronto da inviare.',
+            [bar('Anna'), bub('out', 60, '🐶', { big: true })])
+        ]
+      } }
+  ];
+
+  /* la scena giusta per il telefono scelto (oppure null) */
+  function scenaDi(tr, tel) {
+    if (!tr.sc) return null;
+    if (Array.isArray(tr.sc)) {
+      if (tr.sol) {
+        if (tr.sol !== tel) return null;
+      }
+      return tr.sc;
+    }
+    return tr.sc[tel] || null;
+  }
+  function fileVoce(n, tr, tel, f) {
+    var chiave = Array.isArray(tr.sc) ? '' : tel;
+    return 't' + (n + 1) + chiave + '-' + (f + 1) + '.mp3';
+  }
+  function testoVoce(n, tr, f, fotogramma) {
+    var v = fotogramma.v || fotogramma.c;
+    if (f === 0) v = 'Trucco numero ' + (n + 1) + '. ' + tr.t + '. ' + v;
+    return v;
+  }
+  /* DATI-FINE */
+
+  var radice = document.getElementById('lute-wt');
+  var lista = document.getElementById('wt-lista');
+  var AUDIO = radice.getAttribute('data-audio') || 'audio/';
+  var IMMAGINI = radice.getAttribute('data-immagini') || '';
+  radice.querySelector('.wt-video').setAttribute('href', 'https://www.youtube.com/watch?v=FUn7DKwvgXA');
+
+  function el(tag, cls, testo) {
+    var e = document.createElement(tag);
+    if (cls) e.className = cls;
+    if (testo !== undefined) e.textContent = testo;
+    return e;
+  }
+  /* tramonto sul mare con il profilo di Capo Milazzo, disegnato in quattro tinte */
+  var TINTE = [
+    { cielo: '#ff922b, #ffd43b 60%', mare: '#e8590c, #7c2d12', sole: '#fff3bf', capo: '#3b1d0f', x: 58 },
+    { cielo: '#5f3dc4, #f783ac 55%, #ffa94d', mare: '#862e9c, #2b2a5a', sole: '#ffe066', capo: '#1f1a3a', x: 42 },
+    { cielo: '#c92a2a, #ff8787 50%, #ffd8a8', mare: '#1864ab, #0b2f57', sole: '#fffbe6', capo: '#0d1b2a', x: 60 },
+    { cielo: '#74c0fc, #ffc9c9 55%, #ffe8cc', mare: '#4dabf7, #1971c2', sole: '#fff4e6', capo: '#2b3a67', x: 40 }
+  ];
+  function tramonto(v, cls) {
+    var p = TINTE[v % TINTE.length];
+    var d = el('div', cls);
+    d.style.background = 'linear-gradient(to bottom, ' + p.cielo + ')';
+    /* se ci sono le foto vere (fatte con Gemini) si usano quelle; il disegno resta come riserva */
+    if (IMMAGINI) {
+      d.style.backgroundImage = 'url(' + IMMAGINI + 'tramonto' + (v + 1) + '.jpg), linear-gradient(to bottom, ' + p.cielo + ')';
+      d.style.backgroundSize = 'cover';
+      d.style.backgroundPosition = 'center';
+      return d;
+    }
+    var sole = el('i');
+    sole.style.cssText = 'width:30%;aspect-ratio:1;border-radius:50%;bottom:33%;left:' + p.x + '%;transform:translateX(-50%);background:' + p.sole + ';box-shadow:0 0 18px 8px ' + p.sole;
+    var mare = el('i');
+    mare.style.cssText = 'left:0;right:0;bottom:0;height:40%;background:linear-gradient(to bottom, ' + p.mare + ')';
+    var riflesso = el('i');
+    riflesso.style.cssText = 'bottom:6%;height:32%;width:16%;left:' + p.x + '%;transform:translateX(-50%);opacity:.45;border-radius:40%;background:repeating-linear-gradient(to bottom, ' + p.sole + ' 0 1px, transparent 1px 8px)';
+    var capo = el('i');
+    capo.style.cssText = 'bottom:39%;height:11%;width:70%;background:' + p.capo + ';clip-path:polygon(0 100%, 0 20%, 10% 8%, 22% 14%, 30% 4%, 33% 0, 36% 4%, 46% 22%, 62% 48%, 80% 74%, 100% 100%);' + (v % 2 === 0 ? 'left:0' : 'right:0;transform:scaleX(-1)');
+    d.appendChild(sole);
+    d.appendChild(mare);
+    d.appendChild(riflesso);
+    d.appendChild(capo);
+    return d;
+  }
+
+  function costruisci(u) {
+    var frag = document.createDocumentFragment();
+    u.forEach(function (x) {
+      var e;
+      if (x.k === 'bar') {
+        e = el('div', 'u-bar', x.t);
+      } else if (x.k === 'row') {
+        e = el('div', 'u-row' + (x.hi ? ' u-hi' : ''), x.t);
+        e.style.top = x.y + 'px';
+      } else if (x.k === 'bub') {
+        e = el('div', 'u-bub u-' + x.s + (x.hi ? ' u-hi' : '') + (x.cit ? ' u-cit' : '') + (x.big ? ' u-big' : ''));
+        e.style.top = x.y + 'px';
+        if (x.q) e.appendChild(el('div', 'u-q', x.q));
+        var tt = el('div', '', x.t);
+        tt.style.whiteSpace = 'pre-line';
+        e.appendChild(tt);
+      } else if (x.k === 'inp') {
+        e = el('div', 'u-inp', x.t);
+        e.style.whiteSpace = 'pre-line';
+      } else if (x.k === 'menu') {
+        e = el('div', 'u-menu');
+        e.style.left = x.x + 'px';
+        e.style.top = x.y + 'px';
+        x.i.forEach(function (it, n) { e.appendChild(el('div', 'u-mi' + (n === x.hi ? ' u-hi' : ''), it)); });
+      } else if (x.k === 'btn') {
+        e = el('div', 'u-btn' + (x.hi ? ' u-hi' : '') + (x.alt ? ' u-alt' : ''), x.t);
+        e.style.left = x.x + 'px';
+        e.style.top = x.y + 'px';
+        e.style.width = x.w + 'px';
+      } else if (x.k === 'vid') {
+        e = el('div', 'u-vid', x.t);
+        e.style.top = x.y + 'px';
+        e.style.height = x.h + 'px';
+      } else if (x.k === 'tl') {
+        e = el('div', 'u-tl');
+        e.style.top = x.y + 'px';
+        var s = el('div', 'u-sel');
+        s.style.left = x.a + '%';
+        s.style.width = (x.b - x.a) + '%';
+        s.appendChild(el('b', '', x.t));
+        e.appendChild(s);
+      } else if (x.k === 'tog') {
+        e = el('div', 'u-tog' + (x.on ? ' u-on' : '') + (x.hi ? ' u-hi' : ''), x.on ? 'GIF ✓' : 'GIF');
+      } else if (x.k === 'send') {
+        e = el('div', 'u-send' + (x.hi ? ' u-hi' : ''), '➤');
+        e.style.left = x.x + 'px';
+        e.style.top = x.y + 'px';
+      } else if (x.k === 'tiles') {
+        e = el('div');
+        for (var n = 0; n < 4; n++) {
+          var t2 = tramonto(n, 'u-tile' + (n === x.hi ? ' u-hi' : ''));
+          t2.style.left = (n % 2 === 0 ? 10 : 104) + 'px';
+          t2.style.top = (x.y + (n < 2 ? 0 : 130)) + 'px';
+          e.appendChild(t2);
+        }
+      } else if (x.k === 'sfondo') {
+        e = tramonto(x.v, 'u-sfondo');
+      } else if (x.k === 'photo') {
+        e = el('div', 'u-photo' + (x.hi ? ' u-hi' : ''), x.e);
+        e.style.top = x.y + 'px';
+        e.style.height = x.h + 'px';
+      }
+      if (e) frag.appendChild(e);
+    });
+    return frag;
+  }
+
+  /* ---- voce ---- */
+  var voceAccesa = true;
+  try { voceAccesa = localStorage.getItem('lute-wt-voce') !== 'no'; } catch (e) {}
+  var audio = null;
+  try { audio = new Audio(); audio.preload = 'auto'; } catch (e) { audio = null; }
+
+  /* ---- animazione di un telefono ---- */
+  var attiva = null;
+  function fermaAttiva() {
+    if (attiva) { attiva.ferma(); attiva = null; }
+  }
+  var ridotto = false;
+  try { ridotto = window.matchMedia('(prefers-reduced-motion: reduce)').matches; } catch (e) {}
+
+  function creaDemo(n, tr, tel, scena) {
+    var demo = el('div', 'wt-demo');
+    var passo = el('div', 'wt-passo', '');
+    var box = el('div', 'wt-telbox');
+    var schermo = el('div', 'wt-tel');
+    var sc = el('div', 'wt-sc');
+    var mano = el('div', 'wt-mano', '👆');
+    var anello = el('div', 'wt-anello');
+    var fatto = el('div', 'wt-fatto', '✔ Fatto!');
+    schermo.appendChild(sc);
+    schermo.appendChild(anello);
+    schermo.appendChild(mano);
+    schermo.appendChild(fatto);
+    box.appendChild(schermo);
+    var cap = el('div', 'wt-cap');
+    cap.setAttribute('aria-live', 'polite');
+    var ctrl = el('div', 'wt-ctrl');
+    var bPausa = el('button', '', '⏸ Pausa');
+    bPausa.type = 'button';
+    var bCapo = el('button', '', '↻ Da capo');
+    bCapo.type = 'button';
+    var bAvanti = el('button', '', 'Passo ▶');
+    bAvanti.type = 'button';
+    ctrl.appendChild(bPausa);
+    ctrl.appendChild(bCapo);
+    ctrl.appendChild(bAvanti);
+    var sugg = el('div', 'wt-suggerisci', '🔊 Per sentire la voce tocca «Da capo»');
+    demo.appendChild(passo);
+    demo.appendChild(box);
+    demo.appendChild(cap);
+    demo.appendChild(ctrl);
+    demo.appendChild(sugg);
+
+    var i = -1, timer = null, tocco = null, inPausa = false, giro = 0;
+
+    /* il telefono disegnato si rimpicciolisce se lo schermo è stretto */
+    function adatta() {
+      var largo = demo.clientWidth - 28;
+      if (largo <= 0) return;
+      var lw = 214, lh = 408;
+      var s = Math.min(1.2, largo / lw);
+      if (s < 0.6) s = 0.6;
+      schermo.style.transform = 'scale(' + s.toFixed(3) + ')';
+      box.style.width = Math.round(lw * s) + 'px';
+      box.style.height = Math.round(lh * s) + 'px';
+    }
+
+    function coriandoli() {
+      var tinte = ['#ffd43b', '#ff6b6b', '#4dabf7', '#69db7c', '#f783ac', '#ffffff'];
+      for (var k = 0; k < 26; k++) {
+        var c = el('div', 'wt-coriandolo');
+        c.style.left = Math.round(Math.random() * 100) + '%';
+        c.style.background = tinte[k % tinte.length];
+        c.style.animationDelay = (Math.random() * 0.6).toFixed(2) + 's';
+        demo.appendChild(c);
+        (function (cc) { setTimeout(function () { if (cc.parentNode) cc.parentNode.removeChild(cc); }, 3200); })(c);
+      }
+    }
+
+    function mostra(k) {
+      i = k;
+      var f = scena[k];
+      sc.innerHTML = '';
+      sc.appendChild(costruisci(f.u));
+      cap.textContent = f.c;
+      passo.textContent = 'Passo ' + (k + 1) + ' di ' + scena.length;
+      clearTimeout(tocco);
+      mano.classList.remove('wt-preme');
+      anello.classList.remove('wt-vai');
+      fatto.classList.remove('wt-vai');
+      if (f.t) {
+        mano.style.opacity = 1;
+        mano.style.left = (f.t[0] - 14) + 'px';
+        mano.style.top = (f.t[1] - 4) + 'px';
+        anello.style.left = (f.t[0] - 17) + 'px';
+        anello.style.top = (f.t[1] - 17) + 'px';
+        tocco = setTimeout(function () { mano.classList.add('wt-preme'); anello.style.opacity = 1; anello.classList.add('wt-vai'); }, 850);
+      } else {
+        mano.style.opacity = 0;
+        anello.style.opacity = 0;
+      }
+      if (k === scena.length - 1) {
+        tocco = setTimeout(function () { fatto.classList.add('wt-vai'); if (!ridotto) coriandoli(); }, f.t ? 1300 : 500);
+      }
+    }
+
+    function durataSenzaVoce(f) { return Math.max(2800, f.c.length * 70); }
+
+    function prossimo(mioGiro) {
+      if (mioGiro !== giro) return;
+      if (inPausa) return;
+      var k = (i + 1) % scena.length;
+      if (k === 0) {
+        if (i === scena.length - 1) {
+          /* fine: si ferma sull'ultimo passo, si riparte con «Da capo» */
+          pausa();
+          bPausa.textContent = '▶ Riguarda';
+          return;
+        }
+      }
+      mostra(k);
+      parla(k, mioGiro);
+    }
+
+    function parla(k, mioGiro) {
+      var f = scena[k];
+      var dopo = function () { if (mioGiro === giro) timer = setTimeout(function () { prossimo(mioGiro); }, 900); };
+      if (!voceAccesa || !audio) {
+        timer = setTimeout(function () { prossimo(mioGiro); }, durataSenzaVoce(f));
+        return;
+      }
+      audio.onended = dopo;
+      audio.onerror = function () { if (mioGiro === giro) timer = setTimeout(function () { prossimo(mioGiro); }, durataSenzaVoce(f)); };
+      audio.src = AUDIO + fileVoce(n, tr, tel, k);
+      var pr = null;
+      try { pr = audio.play(); } catch (e) { pr = null; }
+      if (pr) {
+        if (pr.catch) {
+          pr.catch(function () {
+            if (mioGiro !== giro) return;
+            sugg.classList.add('wt-vedi');
+            timer = setTimeout(function () { prossimo(mioGiro); }, durataSenzaVoce(f));
+          });
+        }
+      }
+    }
+
+    function fermaTutto() {
+      giro++;
+      clearTimeout(timer);
+      clearTimeout(tocco);
+      if (audio) { try { audio.pause(); } catch (e) {} audio.onended = null; audio.onerror = null; }
+    }
+    function pausa() {
+      fermaTutto();
+      inPausa = true;
+      bPausa.textContent = '▶ Riprendi';
+    }
+    function avvia(da) {
+      fermaTutto();
+      inPausa = false;
+      sugg.classList.remove('wt-vedi');
+      bPausa.textContent = '⏸ Pausa';
+      mostra(da);
+      parla(da, giro);
+    }
+    bPausa.addEventListener('click', function () {
+      if (inPausa) {
+        if (i === scena.length - 1) avvia(0); else avvia(i < 0 ? 0 : i);
+      } else {
+        pausa();
+      }
+    });
+    bCapo.addEventListener('click', function () { avvia(0); });
+    bAvanti.addEventListener('click', function () {
+      pausa();
+      mostra((i + 1) % scena.length);
+    });
+    return {
+      el: demo,
+      adatta: adatta,
+      parti: function () {
+        adatta();
+        if (ridotto) { mostra(0); pausa(); bPausa.textContent = '▶ Guarda'; } else { avvia(0); }
+      },
+      ferma: function () { fermaTutto(); }
+    };
+  }
+
+  /* ---- elenco dei trucchi ---- */
+  var telefono = 'a';
+  try {
+    if (/iPhone|iPad|iPod/.test(navigator.userAgent)) telefono = 'i';
+    var salvato = localStorage.getItem('lute-wt-tel');
+    if (salvato === 'a' || salvato === 'i') telefono = salvato;
+  } catch (e) {}
+
+  function costruisciElenco() {
+    fermaAttiva();
+    lista.innerHTML = '';
+    TRUCCHI.forEach(function (tr, n) {
+      var passi = tr[telefono] || tr.p;
+      var d = el('details', 'wt-t');
+      d.style.setProperty('--col', tr.col);
+      d.style.setProperty('--col2', tr.col2);
+      var s = el('summary');
+      s.appendChild(el('span', 'wt-ic', tr.ic));
+      s.appendChild(el('span', 'wt-tit', (n + 1) + '. ' + tr.t));
+      if (tr.sol === 'i') s.appendChild(el('span', 'wt-badge', 'Solo iPhone'));
+      d.appendChild(s);
+      var c = el('div', 'wt-corpo');
+      var testi = el('div', 'wt-testi');
+      testi.appendChild(el('p', 'wt-perche', tr.per));
+      var demo = null;
+      if (!passi) {
+        testi.appendChild(el('div', 'wt-avviso', 'Questa funzione esiste solo su iPhone. Se hai un telefono Android puoi passare al trucco successivo.'));
+      } else {
+        var ol = el('ol', 'wt-passi');
+        passi.forEach(function (p) { ol.appendChild(el('li', '', p)); });
+        testi.appendChild(ol);
+        if (tr.n) testi.appendChild(el('div', 'wt-nota', '💡 ' + tr.n));
+        var scena = scenaDi(tr, telefono);
+        if (scena) demo = creaDemo(n, tr, telefono, scena);
+      }
+      c.appendChild(testi);
+      if (demo) c.appendChild(demo.el);
+      d.appendChild(c);
+      d.addEventListener('toggle', function () {
+        if (d.open) {
+          Array.prototype.forEach.call(lista.querySelectorAll('details'), function (o) { if (o !== d) o.open = false; });
+          fermaAttiva();
+          if (demo) { attiva = demo; demo.parti(); }
+        } else if (attiva === demo) {
+          fermaAttiva();
+        }
+      });
+      lista.appendChild(d);
+    });
+  }
+
+  var bAnd = document.getElementById('wt-and');
+  var bIph = document.getElementById('wt-iph');
+  var bVoce = document.getElementById('wt-voce');
+  function scegli(t) {
+    telefono = t;
+    bAnd.setAttribute('aria-pressed', t === 'a' ? 'true' : 'false');
+    bIph.setAttribute('aria-pressed', t === 'i' ? 'true' : 'false');
+    try { localStorage.setItem('lute-wt-tel', t); } catch (e) {}
+    costruisciElenco();
+  }
+  function mostraVoce() {
+    bVoce.setAttribute('aria-pressed', voceAccesa ? 'true' : 'false');
+    bVoce.textContent = voceAccesa ? '🔊 Voce accesa' : '🔇 Voce spenta';
+  }
+  bAnd.addEventListener('click', function () { scegli('a'); });
+  bIph.addEventListener('click', function () { scegli('i'); });
+  bVoce.addEventListener('click', function () {
+    voceAccesa = !voceAccesa;
+    try { localStorage.setItem('lute-wt-voce', voceAccesa ? 'si' : 'no'); } catch (e) {}
+    mostraVoce();
+    if (!voceAccesa) { if (audio) { try { audio.pause(); } catch (e) {} } }
+  });
+  mostraVoce();
+  window.addEventListener('resize', function () { if (attiva) attiva.adatta(); });
+  bAnd.setAttribute('aria-pressed', telefono === 'a' ? 'true' : 'false');
+  bIph.setAttribute('aria-pressed', telefono === 'i' ? 'true' : 'false');
+  costruisciElenco();
+
+  /* dimensione del testo */
+  var base = 19;
+  try { base = parseInt(localStorage.getItem('lute-wt-base'), 10) || 19; } catch (e) {}
+  function applicaBase() {
+    radice.style.setProperty('--base', base + 'px');
+    try { localStorage.setItem('lute-wt-base', base); } catch (e) {}
+  }
+  radice.querySelector('.wt-piu').addEventListener('click', function () { base = Math.min(30, base + 2); applicaBase(); });
+  radice.querySelector('.wt-meno').addEventListener('click', function () { base = Math.max(15, base - 2); applicaBase(); });
+  applicaBase();
+
+  radice.querySelector('.wt-schermo').addEventListener('click', function () {
+    if (!document.fullscreenElement) {
+      if (radice.requestFullscreen) radice.requestFullscreen();
+    } else {
+      document.exitFullscreen();
+    }
+  });
+})();
+</script>
+</div>
+<!-- FINE APP -->
+
+</body>
+</html>
